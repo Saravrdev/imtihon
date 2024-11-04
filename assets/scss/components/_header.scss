@@ -1,0 +1,53 @@
+.header {
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and(max-width:414px) {}
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__button {
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 8px;
+        padding: 18px 36px;
+        width: 186px;
+        height: 55px;
+        background: #ff8541;
+
+        @media screen and(max-width:414px) {
+            width: 156px;
+            height: 43px;
+        }
+
+
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: #8d8c8b;
+
+        @media screen and(max-width:414px) {
+            display: none;
+        }
+    }
+
+    &__line {
+        stroke-width: 1px;
+        stroke: #8d8c8b;
+    }
+}
